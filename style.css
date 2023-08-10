@@ -1,0 +1,512 @@
+
+.blank {
+    float: left;
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+
+}
+.blankr {
+    float: right;
+    width: 10vw;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bgp {
+    background-image: url("./images/hand.jpg");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+    color: white;
+    font-size: 1rem;
+}
+
+.bars {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .navs, .book {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+        font-size: 1.3rem;
+    }
+}
+
+.navs ul {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    
+}
+
+.logo span {
+    font-family: 'League Script', cursive;
+    font-size: 1.5rem;
+}
+
+main {
+    height: 94vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.content a {
+    width: 5.3rem;
+    border-bottom: .2rem double white;
+    font-family: 'Birthstone', cursive;
+    font-size: 2rem;
+    margin-top: 4vh;
+    
+}
+
+/*-----------section "three"---------------*/
+
+
+.three {
+    background-color: rgb(236,236,239);
+    height: 45vh;
+}
+
+.three .blank {
+    height: 45vh;
+    float: left;
+    
+}
+
+.three .blankr {
+    height: 45vh;
+    float: right;
+}
+.combo {
+    float: left;
+    height: 45vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cha {
+    width: 22vw;
+}
+
+#fire, #heart, #check {
+    display: block;
+    border-bottom: 2rem solid rgba(255, 255, 255, 0);
+    font-size: 3rem;
+    color: rgb(209,177,122);
+}
+
+.cha h4 {
+    border-bottom: 1rem solid rgba(255, 255, 255, 0);
+    font-size: 2rem;
+    font-family: 'League Script', cursive;
+}
+
+.cha p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .three, .three .blank , .three .blankr {
+        height: 130vh;
+    }
+
+    .combo {
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+    }
+
+
+}
+
+/*-------------class "how"-------------------*/
+
+.how {
+    background-color: rgb(209,177,122);
+    height: 70vh;
+}
+
+.how .blank, .how .blankr {
+    height: 70vh;
+    float: left;
+}
+.how .blankr {
+    float: right;
+}
+
+.text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-bottom: 2rem solid rgba(255, 255, 255, 0);
+    width: 38vw;
+}
+
+.text {
+    width: 40vw;
+    float: left;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 0.9rem;
+    border-bottom: 2rem solid rgba(255, 255, 255, 0);
+}
+
+.text a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    font-size: 0.9rem;
+    height: 3rem;
+
+}
+
+.text button {
+    width: 8rem;
+    border: 0.1rem solid black;
+    background-color: black;
+}
+
+.text button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.vid {
+    width: 40vw;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+@media only screen and (max-width: 740px) {
+    .how, .how .blank, .how .blankr {
+        height: 130vh;
+        float: left;
+    }
+    
+    .how {
+        border-top: 2vh solid rgba(255, 255, 255, 0);
+    }
+    .text  {
+        width: 80vw;
+    }
+
+    .vid {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 58vh;
+        float: left;
+    }
+
+
+}
+
+/*-----------section "ingredients"-----------*/
+
+.ingredients {
+    height: 70vh;
+    
+}
+
+.ingredients .blank, .ingredients .blankr {
+    height: 70vh;
+    float: left;
+}
+
+.ingredients .blankr {
+    float: right;
+}
+
+.list3 {
+    float: left;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.desc {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients img {
+    width: 18rem;
+    height: 22rem;
+    border-radius: 100px;
+    border: 0.4rem inset rgb(209,177,122);
+    
+}
+
+.hmm {
+    margin-top: 1rem;
+}
+
+.hmm h6 {
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    font-family: 'League Script', cursive;
+}
+
+.hmm span {
+    font-size: 0.8rem;
+}
+
+/*make pictures responsive*/
+@media only screen and (max-width: 1300px) {
+    .ingredients {
+        height: 140vh;
+        display: flex;
+        float: left;
+        
+    }
+
+    .ingredients .blank, .ingredients .blankr {
+        height: 140vh;
+        float: left;
+    }
+
+    .ingredients .blankr {
+        float: right;
+    }
+
+    .list3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 34vh;
+        gap: 2rem;
+    }
+
+    .ingredients img {
+        width: 13rem;
+        height: 15rem;
+    }
+}
+
+/*-----------------section "ad"------------------------*/
+
+.ad .blank , .ad .blankr {
+    height: 50vh;
+    float: left;
+    
+}
+
+.ad .blankr {
+    float: right;
+}
+
+.ad {
+    height: 40vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+
+.add {
+    height: 50vh;
+    width: 80vw;
+    background-image: url("./images/best.jpg");
+    background-size: cover;
+    background-position: left bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add span, .add h3, .add a {
+    margin-left: 5vw;
+    color: white;
+}
+
+.add span {
+    font-size: 1rem;
+}
+
+.add h3 {
+    font-size: 2rem;
+    width: 40vw;
+    margin: 1rem 0rem 1.5rem 5vw;
+}
+
+.add a {
+    border: 0.1rem solid white;
+    width: 8rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/*---------------class="gallery"----------*/
+
+.gallery .blank, .gallery .blankr{ 
+    height: 150vh;
+    float: left;
+   
+}
+
+.gallery .blankr {
+    float: right;
+}
+
+.gallery {
+    float: left;
+    height: 200vh;
+    display: flex;
+    margin-top: 12rem;
+    background-color: rgb(209,177,122);
+}
+
+.field {
+    width: 80vw;
+    text-align: center;
+}
+
+.topped h2 {
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 5rem;
+}
+
+.galleries {
+    width: 80vw;
+    height: 160vh;
+    margin-top: 5rem;
+}
+
+.etage1 *, .etage2 *, .etage3 * {
+    border-radius: 30px;
+}
+
+.etage1 .img1 {
+    float: left;
+    width: 30vw;
+    height: 35vh;
+    background-image: url("./images/minis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 1rem solid rgb(209,177,122);
+}
+
+.etage1 .img2 {
+    float: left;
+    width: 50vw;
+    height: 35vh;
+    background-image: url("./images/realcloseup.jpg");      
+    background-size: cover;              
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+
+.etage2 .img3 {
+    float: left;
+    width: 40vw;
+    height: 50vh;
+    background-image: url("./images/bigstrawberry.jpg");
+    background-size: cover;              
+    background-repeat:  no-repeat;
+    background-position: center center; 
+    border-top: 1rem solid rgb(209,177,122);
+}
+
+.etage2 .img4 {
+    float: left;
+    width: 40vw;
+    height: 50vh;
+    background-size: cover;              
+    background-repeat:  no-repeat;
+    background-position: center center; 
+    border-top: 1rem solid rgb(209,177,122);
+    border-left: 1rem solid rgb(209,177,122);
+    background-image: url("./images/background.jpeg");
+}
+
+.etage3 .img5 {
+    float: left;
+    width: 60vw;
+    height: 35vh;
+    background-size: cover;              
+    background-repeat:  no-repeat;
+    background-position: center center; 
+    border-top: 1rem solid rgb(209,177,122);
+    background-image: url("./images/bignfancy.jpg");
+}
+
+.etage3 .img6 {
+    float: left;
+    width: 20vw;
+    height: 35vh;
+    background-size: cover;              
+    background-repeat:  no-repeat;
+    background-position: center center;
+    border-top: 1rem solid rgb(209,177,122);
+    border-left: 1rem solid rgb(209,177,122);
+    background-image: url("./images/minisprinkle.jpg");
+
+}
+/*minis and realcloseup/ bigstraw,background/ bignfancy,minisprinkle*/
+
