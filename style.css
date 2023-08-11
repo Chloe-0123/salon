@@ -172,7 +172,7 @@ main {
 
 .how {
     background-color: rgb(209,177,122);
-    height: 70vh;
+    height: 90vh;
 }
 
 .how .blank, .how .blankr {
@@ -192,12 +192,13 @@ main {
 }
 
 .text {
-    width: 40vw;
+    width: 40%;
     float: left;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top: 7   `0px solid rgba(0, 0, 0, 0);
 }
 
 .text p {
@@ -234,6 +235,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 70vh;
+    border-top: 50px solid rgba(0, 0, 0, 0);
 }
 
 @media only screen and (max-width: 740px) {
@@ -247,6 +249,10 @@ main {
     }
     .text  {
         width: 80vw;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
     }
 
     .vid {
@@ -287,7 +293,7 @@ main {
     
 }
 .desc {
-    width: 25vw;
+    width: 30%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -296,7 +302,7 @@ main {
 }
 
 .ingredients img {
-    width: 18rem;
+    width: 230px;
     height: 22rem;
     border-radius: 100px;
     border: 0.4rem inset rgb(209,177,122);
@@ -318,7 +324,7 @@ main {
 }
 
 /*make pictures responsive*/
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1023px) {
     .ingredients {
         height: 140vh;
         display: flex;
@@ -509,4 +515,3 @@ main {
 
 }
 /*minis and realcloseup/ bigstraw,background/ bignfancy,minisprinkle*/
-
