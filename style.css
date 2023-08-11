@@ -110,6 +110,7 @@ main {
 .three {
     background-color: rgb(236,236,239);
     height: 45vh;
+    width: 100vw;
 }
 
 .three .blank {
@@ -173,6 +174,10 @@ main {
 .how {
     background-color: rgb(209,177,122);
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100vw;
 }
 
 .how .blank, .how .blankr {
@@ -198,7 +203,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 7   `0px solid rgba(0, 0, 0, 0);
+    border-top: 70px solid rgba(0, 0, 0, 0);
 }
 
 .text p {
@@ -242,10 +247,14 @@ main {
     .how, .how .blank, .how .blankr {
         height: 130vh;
         float: left;
+        width: 100%;
     }
     
     .how {
         border-top: 2vh solid rgba(255, 255, 255, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .text  {
         width: 80vw;
@@ -267,29 +276,31 @@ main {
 
 }
 
+@media only screen and (max-width: 315px) {
+    .vid{
+        width: 80%;
+    }
+}
+
 /*-----------section "ingredients"-----------*/
 
 .ingredients {
     height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 
-.ingredients .blank, .ingredients .blankr {
-    height: 70vh;
-    float: left;
-}
 
-.ingredients .blankr {
-    float: right;
-}
 
 .list3 {
     float: left;
-    width: 80vw;
-    height: 70vh;
+    width: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+   
     
 }
 .desc {
@@ -302,7 +313,7 @@ main {
 }
 
 .ingredients img {
-    width: 230px;
+   width: 100%;
     height: 22rem;
     border-radius: 100px;
     border: 0.4rem inset rgb(209,177,122);
@@ -326,26 +337,21 @@ main {
 /*make pictures responsive*/
 @media only screen and (max-width: 1023px) {
     .ingredients {
-        height: 140vh;
+        height: 80vh;
+        width: 100%;
         display: flex;
-        float: left;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         
-    }
-
-    .ingredients .blank, .ingredients .blankr {
-        height: 140vh;
-        float: left;
-    }
-
-    .ingredients .blankr {
-        float: right;
     }
 
     .list3 {
         display: flex;
-        flex-direction: column;
-        margin-top: 34vh;
+        height: auto;
+        align-items: center;
         gap: 2rem;
+    
     }
 
     .ingredients img {
@@ -353,6 +359,30 @@ main {
         height: 15rem;
     }
 }
+@media only screen and (max-width: 764px) {
+    .ingredients img {
+        width: 130px;
+        height: 170px;
+    }
+    .list3 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc {
+        height: 100%;
+    }
+
+    .ingredients {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 150vh;
+    }
+
+}
+
+@media only screen and (max-width: 550px)
 
 /*-----------------section "ad"------------------------*/
 
